@@ -39,7 +39,7 @@ list-style: none;
 .banner-left h1{
     font-size: 52px;
 }
-button{
+.booking{
     height: 40px;
     width: 150px;
     border: 1px solid;
@@ -77,4 +77,49 @@ button:active{
     grid-template-columns: repeat(7,1fr);
     align-items: center;
     margin-left: 60px;
+}
+/* collection */
+.home{
+text-align: center;
+color: rgb(43, 57, 71);
+}
+.collection{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.picture img{
+    width: 300px;
+    height: 256px;
+}
+.fa-star-half-alt{
+    color: orange;
+}
+.fa-star{
+    color: orange;
+}
+span{
+    margin: 10px;
+    color: #5e6366;
+}
+.information p{
+    color: #787885;
+}
+
+.grand-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.parent{
+    box-shadow: 0 0 40px rgba(0,0,0,0.15 );
+    margin: 0 30px;
+
+
+}
+.extra{
+   color:#e02c6d; 
+   font-size: 20px;
+   outline: 0;
+   border: 0px;
+ 
 }
