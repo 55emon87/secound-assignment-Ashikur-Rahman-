@@ -135,8 +135,12 @@ span{
    
    
 }
+.gadget img{
+    width: 440px;
+    height: 414px;
+}
 .info{
-    margin-left:350px;
+    margin-left:150px;
 }
 .gadget{
     margin-left: 40px;
