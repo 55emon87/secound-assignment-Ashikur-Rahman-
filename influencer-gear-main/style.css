@@ -1,11 +1,23 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Inter:wght@600&family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@600&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     overflow-x: hidden;
+}
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* navigation */
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 100px 0 140px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -13,10 +25,7 @@ body{
     margin-bottom: 60px;
 }
 
-.navigation-title{
-    display: flex;
-    justify-content: space-between;
-}
+
 .nav-bar{
     display: flex;
    
@@ -35,6 +44,14 @@ list-style: none;
 
 .banner{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.banner-left{
+    height: auto;
+    padding: 50px 0 ;
+
+    
 }
 .banner-left h1{
     font-size: 52px;
@@ -50,6 +67,8 @@ list-style: none;
     border: 0;
     position: relative;
     top: 0;
+    display: inline-block;
+    margin-top: 20px;
 }
 button:active{
     top: 7px;
@@ -76,7 +95,7 @@ button:active{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     align-items: center;
-    margin-left: 60px;
+    margin-left: 10px;
     
 }
 /* collection */
@@ -136,14 +155,16 @@ span{
    
 }
 .gadget img{
-    width: 440px;
-    height: 414px;
+    width: 90%;
+    height: 90%;
 }
 .info{
     margin-left:150px;
+    padding: 20px 0;
 }
 .gadget{
     margin-left: 40px;
+    width: 60%;
 }
  
 .info p{
@@ -189,4 +210,41 @@ footer{
 .icon a{
     padding-right: 35px;
     color:aliceblue;
+}
+
+/* responsive part */
+
+@media only screen and (max-width:576px) {
+    .banner{
+        display: grid;
+        grid-template-row: 1fr ;
+        margin: 0 auto;
+        width: 80%;
+    }  
+    .link{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        
+    }
+    .link img {
+       padding-right: 20px;
+    }
+    .grand-parent{
+        grid-template-columns: 1fr ;
+
+    }
+    .more{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
 }
